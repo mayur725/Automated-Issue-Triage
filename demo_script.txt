@@ -1,0 +1,28 @@
+Demo Script (2-4 minutes) — Automated Issue Triage & Categorization
+
+Intro (0:00-0:20)
+- Quick intro: "Hi, I'm Mohd Kaif Malik. This demo shows an Automated Issue Triage prototype that ingests ServiceNow tickets, classifies them, retrieves relevant Confluence docs and links to resolved JIRA incidents, and suggests priority."
+
+Show architecture (0:20-0:50)
+- Briefly show architecture slide: Input (ServiceNow tickets) -> Classifier (LLM) -> Retriever (OpenAI embeddings) -> Output (category, priority, docs, JIRA links). Mention Prometheus metrics and Docker.
+
+Live demo (0:50-2:20)
+- Switch to the web UI. Paste a sample ticket: short desc + description.
+- Click "Run Triage".
+- Show the JSON output: category, priority, confidence, matched_doc, matched_jira, explanation.
+- Repeat with 2 more tickets: a performance issue and a config request to show different categories and matched docs/JIRA.
+
+Explain internals briefly (2:20-3:10)
+- Explain that embeddings are precomputed for Confluence docs and resolved JIRA summaries, and query embeddings are computed on the fly to find nearest docs.
+- Explain fallback behavior (TF-IDF) if OpenAI not configured.
+
+Closing (3:10-3:30)
+- Summarize value: reduces manual triage time, routes issues faster, surfaces relevant docs and past incidents.
+- Mention next steps: integrate with live ServiceNow/JIRA/Confluence APIs, add access control, and improve ranking.
+
+End (3:30-4:00)
+- Thank you + contact info.
+
+Narration tips:
+- Speak clearly. Use the lines above as guide; you don't need to read verbatim.
+- Keep demo actions quick and pre-run to avoid flakiness.

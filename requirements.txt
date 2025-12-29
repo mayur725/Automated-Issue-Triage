@@ -1,0 +1,13 @@
+
+fastapi
+uvicorn[standard]
+pydantic
+requests
+python-dotenv
+scikit-learn
+numpy
+prometheus-client
+aiohttp
+openai
+tqdm
+python-pptx

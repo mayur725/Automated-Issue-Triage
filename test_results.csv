@@ -1,0 +1,6 @@
+ticket_id,category,priority,matched_doc,matched_jira,confidence
+SNOW-001,login,P1,Password_Reset_Guide.txt,JIRA-1234,0.92
+SNOW-002,performance,P2,Performance_Troubleshooting.txt,JIRA-2345,0.89
+SNOW-003,bug,P2,File_Upload_Spec.txt,JIRA-3456,0.87
+SNOW-004,config,P2,DB_Config_APAC.txt,JIRA-4567,0.90
+SNOW-005,access,P3,Analytics_Access_Process.txt,JIRA-5678,0.85
