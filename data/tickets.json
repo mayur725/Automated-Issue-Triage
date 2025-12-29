@@ -1,0 +1,37 @@
+[
+  {
+    "ticket_id": "SNOW-001",
+    "short_desc": "Cannot login to portal",
+    "description": "I tried to login using my corporate credentials and get 401 unauthorized. Password reset doesn't work.",
+    "impact": "user",
+    "created": "2025-12-09"
+  },
+  {
+    "ticket_id": "SNOW-002",
+    "short_desc": "Slow report generation",
+    "description": "Reports taking more than 2 minutes to generate since last release, sometimes time out.",
+    "impact": "team",
+    "created": "2025-12-09"
+  },
+  {
+    "ticket_id": "SNOW-003",
+    "short_desc": "Error on file upload",
+    "description": "Uploading PDF fails with error 'filetype unsupported' though pdf is allowed earlier.",
+    "impact": "user",
+    "created": "2025-12-08"
+  },
+  {
+    "ticket_id": "SNOW-004",
+    "short_desc": "Config change required for regional instance",
+    "description": "Need DB config updated for region 'APAC' to enable new feed.",
+    "impact": "service",
+    "created": "2025-12-07"
+  },
+  {
+    "ticket_id": "SNOW-005",
+    "short_desc": "Request for access to analytics dashboard",
+    "description": "I need access to analytics dashboard for read-only reports.",
+    "impact": "user",
+    "created": "2025-12-06"
+  }
+]

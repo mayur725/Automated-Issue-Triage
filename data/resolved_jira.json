@@ -1,0 +1,27 @@
+[
+  {
+    "id": "JIRA-1234",
+    "summary": "User unable to login due to expired password policy",
+    "resolution": "Reset password and unlock user"
+  },
+  {
+    "id": "JIRA-2345",
+    "summary": "Reports timing out because of heavy queries after release",
+    "resolution": "Optimized queries and added index"
+  },
+  {
+    "id": "JIRA-3456",
+    "summary": "File upload failing for PDFs due to Nginx size limit",
+    "resolution": "Increased client_max_body_size"
+  },
+  {
+    "id": "JIRA-4567",
+    "summary": "Regional DB config mismatch for APAC causing feed failure",
+    "resolution": "Updated config and redeployed"
+  },
+  {
+    "id": "JIRA-5678",
+    "summary": "User needs access to analytics dashboard - added to AD group",
+    "resolution": "Granted read-only access"
+  }
+]
