@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Automated Triage Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    textarea { width: 100%; height: 120px; }
+    input, button { padding: 8px; margin: 6px 0; }
+    .result { margin-top: 12px; padding: 12px; border: 1px solid #ddd; background:#f9f9f9; }
+    pre { background:#222; color:#0f0; padding:12px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <h2>Automated Issue Triage — Demo</h2>
+  <label>Ticket ID: <input id="ticket_id" value="SNOW-DEMO-1"></label><br/>
+  <label>Short Description:</label><br/>
+  <input id="short_desc" style="width:100%" value="Cannot login to portal"><br/>
+  <label>Description:</label><br/>
+  <textarea id="description">I tried to login using my corporate credentials and get 401 unauthorized. Password reset doesn't work.</textarea><br/>
+  <button onclick="send()">Run Triage</button>
+  <div id="status"></div>
+  <div id="output" class="result" style="display:none;">
+    <h3>Result</h3>
+    <pre id="jsonout"></pre>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
